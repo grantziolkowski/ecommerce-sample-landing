@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "charter_itc_pro";
+    src: url("../fonts/CharterITCPro.woff");
+}
+
+@font-face {
+    font-family: "trade_gothic_lt_pro";
+    src: url("../fonts/TradeGothicLTPro.woff");
+}
+
+html {
+  font-family: trade_gothic_lt_pro;
+}
