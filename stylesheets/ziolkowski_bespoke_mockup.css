@@ -1,13 +1,23 @@
 @font-face {
     font-family: "charter_itc_pro";
-    src: url("../fonts/CharterITCPro.woff");
+    src: url("../fonts/CharterITCPro-Regular.woff");
 }
 
 @font-face {
     font-family: "trade_gothic_lt_pro";
-    src: url("../fonts/TradeGothicLTPro.woff");
+    src: url("../fonts/TradeGothicLTPro-Cn18.woff");
 }
 
 html {
+  font-family: trade_gothic_lt_pro;
+}
+
+#container {
+  border: 1px solid black;
+  margin: 5% 20% 5% 20%;
+}
+
+#title {
+  text-align: center;
   font-family: trade_gothic_lt_pro;
 }
