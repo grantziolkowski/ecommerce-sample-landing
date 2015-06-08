@@ -5,9 +5,10 @@ $(document).ready(function(){
        $('.top_slide').animate({'left' : '-100%'},'slow', function(){
           photo.removeClass('active');
           next.addClass('active');
+          console.log("moving")
         })
       })
     }
 
-    setInterval(carousel,1000);
+    setInterval(carousel,2000);
 })
