@@ -1,14 +1,12 @@
 $(document).ready(function(){
+  console.log("doc")
   function carousel() {
-   var photo = $('.top_slide.active');
-   var next = photo.next();
-       $('.top_slide').animate({'left' : '-100%'},'slow', function(){
-          photo.removeClass('active');
-          next.addClass('active');
-          console.log("moving")
-        })
-      })
+     $('#slides').animate({'left' : '-100%'},'slow', function(){
+        }
+      )
     }
-
+    var totalSlides = $('#slides').children().length
     setInterval(carousel,2000);
+    $('#total').html(totalSlides)
+    $('#counter').appendTo($('#slides'))
 })
