@@ -11,4 +11,13 @@ $(document).ready(function(){
     $('#counter').appendTo($('#slides'))
 
     $('.bottom_slide').eq(0).toggle()
+    $('.bottom_description').html('.item1').text())
+
+    $('.tabs').on('click', function(event){
+      event.preventDefault();
+      var $val = event.target.addClass("active")
+      console.log($val)
+    })
+
+    $
 })

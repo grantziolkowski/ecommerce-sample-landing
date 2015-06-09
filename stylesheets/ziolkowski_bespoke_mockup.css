@@ -93,3 +93,15 @@ html {
   width: 100%;
 }
 
+
+.tabs a {
+  text-decoration: none;
+  padding-left: 10%;
+  color: gray;
+}
+
+.tab1.active {
+  text-decoration: none;
+  color: black;
+}
+
