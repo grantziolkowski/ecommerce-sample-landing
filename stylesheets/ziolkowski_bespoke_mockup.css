@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: trade_gothic_lt_pro;
+  font-family: charter_itc_pro;
 }
 
 #container {
@@ -51,11 +51,39 @@ html {
   font-family: trade_gothic_lt_pro;
 }
 
+.subtitle {
+  font-family: trade_gothic_lt_pro;
+}
+
+#bottom_container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+#right_bar {
+  display: block;
+  width: 25%;
+  margin-left: 4%;
+  background-color: #f0f0eb;
+  position: relative;
+  float: right;
+}
+
+#left_container {
+  width: 75%;
+}
+
 #left_bar {
   display: block;
   width: 20%;
-  background-color: gray;
+  margin-right: 4%;
+  background-color: #f0f0eb;
   position: relative;
   float: left;
+}
+
+.intro {
+
 }
 
