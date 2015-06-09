@@ -34,12 +34,12 @@ html {
 #slides {
   display: block;
   position: relative;
-  width: 200%;
+  width: 300%;
   overflow: hidden;
 }
 
 #slides > li {
-  width: 50%;
+  width: 33.33%;
   float: left;
   position: relative;
   overflow: hidden;
@@ -85,5 +85,11 @@ html {
 
 .intro {
 
+}
+
+.bottom_slide {
+  display: none;
+  position: relative;
+  width: 100%;
 }
 

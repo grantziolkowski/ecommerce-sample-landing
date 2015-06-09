@@ -9,4 +9,6 @@ $(document).ready(function(){
     setInterval(carousel,2000);
     $('#total').html(totalSlides)
     $('#counter').appendTo($('#slides'))
+
+    $('.bottom_slide').eq(0).toggle()
 })
