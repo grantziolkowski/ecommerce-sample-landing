@@ -66,6 +66,10 @@ ul {
   font-family: trade_gothic_lt_pro;
 }
 
+#large_price {
+  font-size: 3em;
+}
+
 .subtitle {
   font-family: trade_gothic_lt_pro;
 }
@@ -78,6 +82,7 @@ ul {
 
 #right_bar {
   display: block;
+  text-align: center;
   width: 25%;
   margin-left: 4%;
   padding: 3%;
@@ -86,8 +91,16 @@ ul {
   float: right;
 }
 
+#right_bar.stick {
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  right: 24%;
+  width: 10%;
+}
+
 #left_container {
-  width: 75%;
+  width: 68%;
 }
 
 #left_bar {
