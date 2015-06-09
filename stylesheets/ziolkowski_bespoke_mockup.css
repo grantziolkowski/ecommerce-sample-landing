@@ -24,20 +24,22 @@ html {
 }
 
 #carousel {
+  display: block;
   width: 100%;
+  height: 60%;
   position: relative;
   overflow: hidden;
 }
 
 #slides {
+  display: block;
   position: relative;
   width: 200%;
   overflow: hidden;
 }
 
-#slides > li{
+#slides > li {
   width: 50%;
-  height: 60%;
   float: left;
   position: relative;
   overflow: hidden;
@@ -48,3 +50,12 @@ html {
   text-align: center;
   font-family: trade_gothic_lt_pro;
 }
+
+#left_bar {
+  display: block;
+  width: 20%;
+  background-color: gray;
+  position: relative;
+  float: left;
+}
+
