@@ -10,13 +10,14 @@ $(document).ready(function(){
     $('#total').html(totalSlides)
     $('#counter').appendTo($('#slides'))
 
-    $('.bottom_slide').eq(0).toggle()
-    $('.bottom_description').html('.item1').text())
+    $('.bottom_slide.active p').html($('#summary1').text())
+    $('.bottom_description').html($('.description #item1').text())
 
-    $('.tabs').on('click', function(event){
+    $('.tabs').children().on('click', function(event){
       event.preventDefault();
-      var $val = event.target.addClass("active")
-      console.log($val)
+      $('.tabs').children().removeClass('active')
+      $('.item_photos').children().removeClass('active')
+      $(event.target).addClass('active')
     })
 
     $
