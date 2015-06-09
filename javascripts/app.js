@@ -17,16 +17,16 @@ $(document).ready(function(){
     var $current = $('#slides li.active')
     $current.removeClass('active')
     if ($current.is($('#slides li').last())) {
-        $('#slides').css({'left': '100%'})
+        $('#slides').css({'left': '0%'})
         $('#slides li').first().addClass('active')
+        $(".count").html("1")
     }
     else {
         $('#slides').animate({'left': '-100%'},'slow')
         $current.next().addClass('active')
         $current = $current.next();
+        $(".count").html($current.index()+1)
     }
-    $(".count").text($current.index()+1);
-    $('#counter').appendTo($current)
   }
 
   function stickSideBar() {
