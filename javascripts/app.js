@@ -15,9 +15,15 @@ $(document).ready(function(){
 
     $('.tabs').children().on('click', function(event){
       event.preventDefault();
+
       $('.tabs').children().removeClass('active')
       $('.item_photos').children().removeClass('active')
       $(event.target).addClass('active')
+      $(event.target.hash).addClass('active')
+      $('.bottom_slide.active p').fadeOut().fadeIn()
+      $('.bottom_slide.active p').html($('#summary1').text())
+      $('.bottom_description').fadeOut().fadeIn()
+      $('.bottom_description').html($('.description #item1').text())
     })
 
     $
