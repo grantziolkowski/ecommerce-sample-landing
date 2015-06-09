@@ -55,6 +55,12 @@ ul {
 
 }
 
+#counter {
+  position: absolute;
+  bottom: 3%;
+  right: 6%;
+}
+
 #title {
   text-align: center;
   font-family: trade_gothic_lt_pro;
