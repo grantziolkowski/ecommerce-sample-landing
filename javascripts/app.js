@@ -10,7 +10,7 @@ $(document).ready(function() {
         var totalSlides = $('#slides').children().length
         $('#total').html(totalSlides)
         $('.bottom_slide.active p').html($('#summary1').text())
-        $('.bottom_description').html($('.description #item1').text())
+        $('.bottom_description').html($('.description #description1').text())
     }());
 
     function carousel() {
@@ -42,14 +42,15 @@ $(document).ready(function() {
 
     function tabbedInterface(e) {
         e.preventDefault();
+        var tabId = e.target.dataset.id
         $('.tabs').children().removeClass('active')
         $('.item_photos').children().removeClass('active')
         $(e.target).addClass('active')
         $(e.target.hash).addClass('active')
         $('.bottom_slide.active p').fadeOut().fadeIn()
-        $('.bottom_slide.active p').html($('#summary1').text())
+        $('.bottom_slide.active p').html($('#summary' + tabId).text())
         $('.bottom_description').fadeOut().fadeIn()
-        $('.bottom_description').html($('.description #item1').text())
+        $('.bottom_description').html($('#description' + + tabId).text())
     }
 
 })
