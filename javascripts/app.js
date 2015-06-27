@@ -46,6 +46,7 @@ $(document).ready(function() {
         $('.tabs').children().removeClass('active')
         $('.item_photos').children().removeClass('active')
         $(e.target).addClass('active')
+        console.log($(e.target.hash))
         $(e.target.hash).addClass('active')
         $('.bottom_slide.active p').fadeOut().fadeIn()
         $('.bottom_slide.active p').html($('#summary' + tabId).text())

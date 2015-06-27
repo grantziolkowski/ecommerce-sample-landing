@@ -2,116 +2,117 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="javascripts/app.js"></script>
-    <title>Mockup</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="javascripts/app.js"></script>
+  <title>Mockup</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="title">
-            DESIGN POST
+  <div id="container">
+    <div id="title">
+      DESIGN POST
+    </div>
+  <div id="content_container">
+    <div id="carousel">
+      <ul id="slides">
+        <li class="active">
+            <img class="top_slide" src="imgs/top_placeholder1.png">
+        </li>
+        <li>
+            <img class="top_slide" src="imgs/top_placeholder2.png">
+        </li>
+        <li>
+            <img class="top_slide" src="imgs/top_placeholder3.png">
+        </li>
+      </ul>
+      <div id="counter">
+          <span class="count"></span> /
+          <span id="total"></span>
+      </div>
+  </div>
+  <div id="bottom_container">
+    <div id="right_bar">
+      <h2 class="subtitle">Special Offer</h2>
+      <p id="large_price">
+          $45
+      </p>
+      Join the Club for exclusive pricing. See a new box each month and skip if it's not for you.
+      <button> JOIN THE CLUB + GET REFRESH </button>
+      Want Refresh without joining? Quick Buy for $55.
+    </div>
+    <div id="left_container">
+    <h1 class="subtitle">
+      Refresh
+    </h1>
+    <p class="intro">
+      Time to toss the cheap plastic bags -- your dopp kit should be as composed as the rest of your travel getup. Our friends at Men's Journal helped us bring back this classic. Get ready to breathe new life into your bathroom cabinet and carry-on.
+    </p>
+    <div id="left_bar" class="subtitle">
+      DOPP KIT 10"X6"X4" DOUBLE HITTER 2-IN-1 SHAMPOO & CONDITIONER 8.5oz CLEAN CUT SEMI-MATTE STYLING CREAM 3.0oz HANDMADE GOLD MOSS SOAP 5.0oz FACE WASH 4.4oz LOTION 0.75oz BODY POW
+    </div>
+    <div class="description">
+      <p class="subtitle">
+        DOPP KIT, BLUE CLAW CO.
+      </p>
+      <p id="item1" data-id="1">
+        <span id="summary1" data-id="1">
+          Summary Text 1 is as resistant to blending in as it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
+       </span>
+       <span id="description1" data-id="1">
+          Description Text 1 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
+        </span>
+      </p>
+    </div>
+    <div class="description">
+      <p class="subtitle">
+          DOPP KIT, BLUE CLAW CO
+      </p>
+      <p id="item2" data-id="2">
+        <span id="summary2" data-id="2">
+          Summary Text 2 is as resistant to blending in as it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
+        </span>
+        <span id="description2" data-id="2">Description Text 2 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
+        </span>
+      </p>
+    </div>
+    <div class="description">
+      <p class="subtitle">
+         DOPP KIT, BLUE CLAW CO.
+      </p>
+      <p id="item3" data-id="3">
+        <span id="summary3" data-id="3">
+         Summary Text 3 is as resistant to blending in as  it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
+        </span>
+        <span id="description3" data-id="3">
+          Description Text 3 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
+          </span>
+        </p>
+      </div>
+      <div class="item_photos">
+        <div class="bottom_slide active" id="tab1">
+          <img src="imgs/bottom_placeholder1.png">
+          <p class="bottom_summary"></p>
         </div>
-        <div id="content_container">
-            <div id="carousel">
-                <ul id="slides">
-                    <li class="active">
-                        <img class="top_slide" src="imgs/top_placeholder1.png">
-                    </li>
-                    <li>
-                        <img class="top_slide" src="imgs/top_placeholder2.png">
-                    </li>
-                    <li>
-                        <img class="top_slide" src="imgs/top_placeholder3.png">
-                    </li>
-                </ul>
-                <div id="counter">
-                    <span class="count"></span> /
-                    <span id="total"></span>
-                </div>
-            </div>
-            <div id="bottom_container">
-                <div id="right_bar">
-                    <h2 class="subtitle">Special Offer</h2>
-                    <p id="large_price">
-                        $45
-                    </p>
-                    Join the Club for exclusive pricing. See a new box each month and skip if it's not for you.
-                    <button> JOIN THE CLUB + GET REFRESH </button>
-                    Want Refresh without joining? Quick Buy for $55.
-                </div>
-                <div id="left_container">
-                <h1 class="subtitle">
-                  Refresh
-                </h1>
-                    <p class="intro">
-                        Time to toss the cheap plastic bags -- your dopp kit should be as composed as the rest of your travel getup. Our friends at Men's Journal helped us bring back this classic. Get ready to breathe new life into your bathroom cabinet and carry-on.
-                    </p>
-                    <div id="left_bar" class="subtitle">
-                        DOPP KIT 10"X6"X4" DOUBLE HITTER 2-IN-1 SHAMPOO & CONDITIONER 8.5oz CLEAN CUT SEMI-MATTE STYLING CREAM 3.0oz HANDMADE GOLD MOSS SOAP 5.0oz FACE WASH 4.4oz LOTION 0.75oz BODY POW
-                    </div>
-                    <div class="description">
-                        <p class="subtitle">
-                            DOPP KIT, BLUE CLAW CO.
-                        </p>
-                        <p id="item1" data-id="1">
-                            <span id="summary1" data-id="1">
-            Summary Text 1 is as resistant to blending in as it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
-         </span>
-         <span id="description1" data-id="1">Description Text 1 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
-         </span>
-                        </p>
-                    </div>
-                    <div class="description">
-                        <p class="subtitle">
-                            DOPP KIT, BLUE CLAW CO
-                        </p>
-                        <p id="item2" data-id="2">
-                            <span id="summary2" data-id="2">
-              Summary Text 2 is as resistant to blending in as it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
-            </span>
-            <span id="description2" data-id="2">Description Text 2 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
-            </span>
-                        </p>
-                    </div>
-                    <div class="description">
-                        <p class="subtitle">
-                            DOPP KIT, BLUE CLAW CO.
-                        </p>
-                        <p id="item3" data-id="3">
-                            <span id="summary3" data-id="3">
-             Summary Text 3 is as resistant to blending in as  it is to wearing down. Designed exclusively for Bespoke, each bag was painstakingly handcrafted in the good old US of A.
-            </span>
-            <span id="description3" data-id="3">
-                Description Text 3 is crafted from heavy, 15oz waxed canvas sourced from family mills in the heartland, while the full-grain leather handle and pull tab, bronze rivets and zipper, and signature blue ballistic nylon lining boast a rugged simplicity. Americana at its best.
-            </span>
-                        </p>
-                    </div>
-                    <div class="item_photos">
-                        <div class="bottom_slide active" id="tab1">
-                            <img src="imgs/bottom_placeholder1.png">
-                            <p class="bottom_summary"></p>
-                        </div>
-                        <div class="bottom_slide" id="tab2">
-                            <img src="imgs/bottom_placeholder2.png">
-                            <p class="bottom_summary"></p>
-                        </div>
-                        <div class="bottom_slide" id="tab3">
-                            <img src="imgs/bottom_placeholder3.png">
-                            <p class="bottom_summary"></p>
-                        </div>
-                    </div>
-                    <div class="tabs">
-                        <a class="subtitle active" href="#tab1" data-id="1">DOLOR SIT AMET</a>
-                        <a class="subtitle" href="#tab2" data-id="2"> LOREM IPSUM </a>
-                        <a class="subtitle" href="#tab3" data-id="3">DOLOR SIT AMET</a>
-                    </div>
-                    <div class="bottom_description">
-                    </div>
-                </div>
-            </div>
+        <div class="bottom_slide" id="tab2">
+          <img src="imgs/bottom_placeholder2.png">
+          <p class="bottom_summary"></p>
         </div>
+        <div class="bottom_slide" id="tab3">
+          <img src="imgs/bottom_placeholder3.png">
+          <p class="bottom_summary"></p>
+        </div>
+      </div>
+      <div class="tabs">
+        <a class="subtitle active" href="#tab1" data-id="1">DOLOR SIT AMET</a>
+        <a class="subtitle" href="#tab2" data-id="2"> LOREM IPSUM </a>
+        <a class="subtitle" href="#tab3" data-id="3">DOLOR SIT AMET</a>
+      </div>
+      <div class="bottom_description">
+      </div>
+    </div>
+  </div>
+ </div>
 </body>
 
 </html>
