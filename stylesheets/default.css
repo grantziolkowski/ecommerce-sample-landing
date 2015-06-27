@@ -53,6 +53,23 @@ ul {
   float: left;
   overflow: hidden;
 
+  -webkit-transition: transform 2s;
+  /*left: 0%;
+     -webkit-animation: slider 2s;
+     -moz-animation: slider 2s;
+      -ms-animation: slider 2s;
+       -o-animation: slider 2s;
+          animation: slider 2s;
+
+    @-webkit-keyframes slider {
+        from { left: 0%; }
+        to   { left: -100%; }
+    }
+    @keyframes slider {
+        from { left: 0%; }
+        to   { left: -100%; }
+    }*/
+
 }
 
 #counter {

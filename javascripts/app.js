@@ -17,19 +17,23 @@ $(document).ready(function() {
         var $current = $('#slides li.active')
         $current.removeClass('active')
         if ($current.is($('#slides li').last())) {
-            $('#slides').css({
-                'left': '0%'
-            })
+            // $('#slides').css({
+            //     'left': '0%'
+            // })
             $('#slides li').first().addClass('active')
             $(".count").html("1")
         } else {
-            $('#slides').animate({
-                'left': '-100%'
-            }, 'slow')
+            // $('#slides').animate({
+            //     'left': '-100%'
+            // }, 'slow')
             $current.next().addClass('active')
             $current = $current.next();
             $(".count").html($current.index() + 1)
         }
+        $('#slides li').css({
+             "-webkit-transform": "translate(-100%)"
+
+        })
     }
 
     function stickSideBar() {
@@ -51,7 +55,7 @@ $(document).ready(function() {
         $('.bottom_slide.active p').fadeOut().fadeIn()
         $('.bottom_slide.active p').html($('#summary' + tabId).text())
         $('.bottom_description').fadeOut().fadeIn()
-        $('.bottom_description').html($('#description' + + tabId).text())
+        $('.bottom_description').html($('#description' + tabId).text())
     }
 
 })
