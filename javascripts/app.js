@@ -17,12 +17,9 @@ $(document).ready(function() {
     }());
 
     function pauseCarousel() {
-        var pause = function() {
-            $('#slides li').css({
-                "-webkit-animation-play-state": "paused"
-            })
-        }
-        setTimeout(pause, CYCLE)
+        $('#slides li').css({
+            "-webkit-animation-play-state": "paused",
+        })
     }
 
     function carousel() {
@@ -39,7 +36,7 @@ $(document).ready(function() {
             $current = $current.next();
             $(".count").html($current.index() + 1)
         }
-        pauseCarousel();
+        setTimeout(pauseCarousel, CYCLE)
     }
 
 
