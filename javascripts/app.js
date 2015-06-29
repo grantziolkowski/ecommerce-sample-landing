@@ -19,7 +19,7 @@ $(document).ready(function() {
     function pauseCarousel() {
         var pause = function() {
             $('#slides li').css({
-                "-webkit-animation-play-state": "paused",
+                "-webkit-animation-play-state": "paused"
             })
         }
         setTimeout(pause, CYCLE)
@@ -39,7 +39,6 @@ $(document).ready(function() {
             $current = $current.next();
             $(".count").html($current.index() + 1)
         }
-
         pauseCarousel();
     }
 
@@ -58,7 +57,6 @@ $(document).ready(function() {
         $('.tabs').children().removeClass('active')
         $('.item_photos').children().removeClass('active')
         $(e.target).addClass('active')
-        console.log($(e.target.hash))
         $(e.target.hash).addClass('active')
         $('.bottom_slide.active p').fadeOut().fadeIn()
         $('.bottom_slide.active p').html($('#summary' + tabId).text())
