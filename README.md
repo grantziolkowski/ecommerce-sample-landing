@@ -1,3 +1,0 @@
-* The top module is a basic slider, with counter in the bottom right corner.
-* The right module scrolls with the page, but once it reaches the top of the window it should become "sticky" and not scroll off screen.
-* The bottom image acts as a tabbed interface. Clicking any of the three links below it should change the image and the text overlaid on top of the image. The images should fade in/out and the text should fade in *after* the image has changed.
