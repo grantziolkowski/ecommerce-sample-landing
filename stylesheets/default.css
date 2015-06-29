@@ -126,6 +126,10 @@ ul {
   float: left;
 }
 
+#left_bar p {
+  margin: 0px 0px 5px 0px;
+}
+
 button {
   color: white;
   background-color: #5aaa50;
