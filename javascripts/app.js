@@ -1,6 +1,9 @@
 $(document).ready(function() {
     (function initialize() {
-        setInterval(carousel, 2000);
+        TOTAL_SLIDES = $('#slides').children().length
+        CYCLE = 2000
+        FULL_CYCLE = TOTAL_SLIDES * CYCLE
+        setInterval(carousel, FULL_CYCLE);
         $(window).scroll(stickSideBar)
         $('.tabs').children().on('click', function(event) {
             tabbedInterface(event)
@@ -13,28 +16,33 @@ $(document).ready(function() {
         $('.bottom_description').html($('.description #description1').text())
     }());
 
+    function pauseCarousel() {
+        var pause = function() {
+            $('#slides li').css({
+                "-webkit-animation-play-state": "paused",
+            })
+        }
+        setTimeout(pause, CYCLE)
+    }
+
     function carousel() {
+        $('#slides li').css({
+            "-webkit-animation-play-state": "running",
+        })
         var $current = $('#slides li.active')
         $current.removeClass('active')
         if ($current.is($('#slides li').last())) {
-            // $('#slides').css({
-            //     'left': '0%'
-            // })
             $('#slides li').first().addClass('active')
             $(".count").html("1")
         } else {
-            // $('#slides').animate({
-            //     'left': '-100%'
-            // }, 'slow')
             $current.next().addClass('active')
             $current = $current.next();
             $(".count").html($current.index() + 1)
         }
-        $('#slides li').css({
-             "-webkit-transform": "translate(-100%)"
 
-        })
+        pauseCarousel();
     }
+
 
     function stickSideBar() {
         if ($(window).scrollTop() > $('#bottom_container').offset().top) {
