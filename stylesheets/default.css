@@ -67,6 +67,18 @@ ul {
         from { left: -2%; }
         to   { left: -102%; }
     }
+    @-moz-keyframes slider {
+        from { left: -2%; }
+        to   { left: -102%; }
+    }
+    @-ms-keyframes slider {
+        from { left: -2%; }
+        to   { left: -102%; }
+    }
+    @-o-keyframes slider {
+        from { left: -2%; }
+        to   { left: -102%; }
+    }
     @keyframes slider {
         from { left: -2%; }
         to   { left: -102%; }
