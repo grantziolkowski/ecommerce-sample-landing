@@ -1,7 +1,7 @@
 $(document).ready(function() {
     (function initialize() {
         TOTAL_SLIDES = $('#slides').children().length
-        CYCLE = 2000
+        CYCLE = 4/ TOTAL_SLIDES * 1000
         FULL_CYCLE = TOTAL_SLIDES * CYCLE
         setInterval(carousel, FULL_CYCLE);
         $(window).scroll(stickSideBar)
@@ -19,12 +19,20 @@ $(document).ready(function() {
     function pauseCarousel() {
         $('#slides li').css({
             "-webkit-animation-play-state": "paused",
+            "-moz-animation-play-state": "paused",
+            "-ms-animation-play-state": "paused",
+            "-o-animation-play-state": "paused",
+            "animation-play-state": "paused"
         })
     }
 
     function carousel() {
         $('#slides li').css({
             "-webkit-animation-play-state": "running",
+            "-moz-animation-play-state": "running",
+            "-ms-animation-play-state": "running",
+            "-o-animation-play-state": "running",
+            "animation-play-state": "running"
         })
         var $current = $('#slides li.active')
         $current.removeClass('active')
@@ -55,9 +63,9 @@ $(document).ready(function() {
         $('.item_photos').children().removeClass('active')
         $(e.target).addClass('active')
         $(e.target.hash).addClass('active')
-        $('.bottom_slide.active p').fadeOut().fadeIn()
+        $('.bottom_slide.active p').hide().fadeIn()
         $('.bottom_slide.active p').html($('#summary' + tabId).text())
-        $('.bottom_description').fadeOut().fadeIn()
+        $('.bottom_description').hide().fadeIn()
         $('.bottom_description').html($('#description' + tabId).text())
     }
 
